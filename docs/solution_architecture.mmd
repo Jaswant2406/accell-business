@@ -1,0 +1,168 @@
+%% Accel Business - Solution Architecture Diagram
+%% Enterprise Track A: Autonomous SMB Digital Onboarding
+flowchart TD
+
+    %% ==========================================
+    %% GLOBAL STYLES & COLOR SYSTEM
+    %% ==========================================
+    classDef actorStyle fill:#1E3A8A,stroke:#1E3A8A,stroke-width:2px,color:#FFFFFF,font-weight:bold;
+    classDef uiStyle fill:#FFFFFF,stroke:#1E3A8A,stroke-width:1.5px,color:#111827,font-weight:600;
+    classDef appStyle fill:#F8FAFC,stroke:#3B82F6,stroke-width:1.5px,color:#0F172A;
+    classDef intelStyle fill:#EFF6FF,stroke:#2563EB,stroke-width:1.5px,color:#0F172A,font-weight:600;
+    classDef priceStyle fill:#F0FDF4,stroke:#16A34A,stroke-width:1.5px,color:#0F172A,font-weight:600;
+    classDef dataStyle fill:#FFFBEB,stroke:#D97706,stroke-width:1.5px,color:#0F172A;
+    classDef extActiveStyle fill:#ECFDF5,stroke:#059669,stroke-width:2px,color:#064E3B,font-weight:600;
+    classDef extMockStyle fill:#F8FAFC,stroke:#64748B,stroke-width:1.5px,stroke-dasharray: 4 4,color:#334155;
+
+    %% ==========================================
+    %% ACTOR & ENTRY
+    %% ==========================================
+    User["👤 SMB Business Owner / Compliance Officer"]:::actorStyle
+    User -->|"1. Accesses Streamlit Application"| AppRoot
+
+    %% ==========================================
+    %% LAYER 1: USER INTERFACE & PRESENTATION
+    %% ==========================================
+    subgraph L1 ["Layer 1: User Interface & Presentation Layer (Streamlit Monolith)"]
+        direction TB
+        AppRoot["app.py • Main Streamlit Application Controller & Dispatcher"]:::uiStyle
+        
+        subgraph L1_Cards ["Customer Journey Views & Management Consoles"]
+            direction LR
+            V_Home["00 Home Landing<br/>(Hero & Services)"]:::uiStyle
+            V_Advisor["01 Advisor Chat<br/>(Needs & Presets)"]:::uiStyle
+            V_Quote["02 Dynamic Quote<br/>(Catalogue Cards)"]:::uiStyle
+            V_KYC["03 Digital KYC<br/>(DPDP Consent)"]:::uiStyle
+            V_Checkout["04 Secure Checkout<br/>(e-NACH Mandate)"]:::uiStyle
+            V_Track["05 Order Track<br/>(SLA & Telemetry)"]:::uiStyle
+            V_Analytics["Sales Analytics<br/>(5k Leads Funnel)"]:::uiStyle
+
+            V_Home --> V_Advisor --> V_Quote --> V_KYC --> V_Checkout --> V_Track
+            V_Track --- V_Analytics
+        end
+        AppRoot --> L1_Cards
+    end
+
+    %% Flow from Layer 1 to Layer 2
+    L1_Cards -->|"2. Dispatches User Inputs & Session Actions"| L2_Inlet["Application Controller Gateway"]:::appStyle
+
+    %% ==========================================
+    %% LAYER 2: APPLICATION & PROCESSING LAYER
+    %% ==========================================
+    subgraph L2 ["Layer 2: Application & Processing Layer (Python Business Logic)"]
+        direction LR
+        L2_Inlet
+        SessionMgr["Session State Manager<br/>(st.session_state Pipeline Cache)"]:::appStyle
+        GuardrailMgr["Input Guardrails Engine<br/>(engine/guardrails.py Clamping)"]:::appStyle
+        AdvisorRouter["Advisor Mode Router<br/>(4s Health Ping & Circuit Breaker)"]:::appStyle
+        KYCController["KYC Workflow Controller<br/>(ui/step_kyc.py & DPDP Gate)"]:::appStyle
+        OCRPipeline["Multi-Pass OCR Pipeline<br/>(kyc/ocr.py OpenCV CV2)"]:::appStyle
+        OrdersMgr["Order Lifecycle Manager<br/>(engine/orders.py State Machine)"]:::appStyle
+        AnalyticsEngine["Funnel Analytics Processor<br/>(engine/analytics_ai.py Metrics)"]:::appStyle
+
+        L2_Inlet --> SessionMgr
+        L2_Inlet --> GuardrailMgr
+        GuardrailMgr --> AdvisorRouter
+        L2_Inlet --> KYCController
+        KYCController --> OCRPipeline
+        L2_Inlet --> OrdersMgr
+        L2_Inlet --> AnalyticsEngine
+    end
+
+    %% Flow from Layer 2 to Layer 3
+    AdvisorRouter -->|"3. Intent & Parameters"| RulesExtractor
+    OCRPipeline -->|"4. Extracted Document IDs"| GSTINValidator
+
+    %% ==========================================
+    %% LAYER 3: INTELLIGENCE & RECOMMENDATION LAYER
+    %% ==========================================
+    subgraph L3 ["Layer 3: Intelligence & Recommendation Layer (Decision Engine)"]
+        direction LR
+        RulesExtractor["Deterministic Rules Extractor<br/>(EN, HI, TA Regex & Keywords)"]:::intelStyle
+        ContextClassifier["Business Context Classifier<br/>(Segment, Tier, Sites & Size)"]:::intelStyle
+        EligibilityEngine["Product Eligibility Engine<br/>(engine/eligibility.py Constraints)"]:::intelStyle
+        GSTINValidator["Statutory GSTIN Validator<br/>(Luhn-Mod-36 Checksum & Matrix)"]:::intelStyle
+        DependencyResolver["Prerequisite Dependency Resolver<br/>(Auto-Injects requires_one_of)"]:::intelStyle
+        RankingEngine["Bundle Ranking Engine<br/>(Scoring, Alternatives & Unlocks)"]:::intelStyle
+
+        RulesExtractor -->|"5. Extracted Needs"| ContextClassifier
+        ContextClassifier -->|"6. Profile Context"| EligibilityEngine
+        GSTINValidator -->|"GSTIN Verified Status"| EligibilityEngine
+        EligibilityEngine -->|"Filtered Products"| DependencyResolver
+        DependencyResolver -->|"7. Auto-Add Base Links"| RankingEngine
+    end
+
+    %% Flow from Layer 3 to Layer 4
+    RankingEngine -->|"8. Recommended Bundles"| BudgetOptimizer
+
+    %% ==========================================
+    %% LAYER 4: PRICING & QUOTATION LAYER
+    %% ==========================================
+    subgraph L4 ["Layer 4: Pricing & Quotation Layer (Financial Engine)"]
+        direction LR
+        BudgetOptimizer["Budget Optimization Engine<br/>(engine/budget_fit.py Pruning)"]:::priceStyle
+        PricingEngine["Product Pricing Engine<br/>(engine/pricing.py Base Rates)"]:::priceStyle
+        VolumeScaler["Quantity & Unit Scaler<br/>(Per Site / User / Device)"]:::priceStyle
+        SetupScaler["Setup Fee Multiplier<br/>(catalogue_setup × Quantity)"]:::priceStyle
+        QuoteGenerator["Quotation Generator<br/>(18% GST Tax, Totals & Pay)"]:::priceStyle
+
+        BudgetOptimizer -->|"9. Fit Cost Ceiling"| PricingEngine
+        PricingEngine --> VolumeScaler
+        VolumeScaler --> SetupScaler
+        SetupScaler -->|"10. Scaled Setup Fees"| QuoteGenerator
+    end
+
+    %% Flow from Layer 4 to Layer 5
+    QuoteGenerator -->|"11. Persist Order Proposal"| OrdersStore
+    OrdersMgr -->|"Persist Order Record"| OrdersStore
+
+    %% ==========================================
+    %% LAYER 5: DATA LAYER
+    %% ==========================================
+    subgraph L5 ["Layer 5: Data Layer (Catalogue, Registries & Persistence)"]
+        direction LR
+        CatalogueCSV[("Product Catalogue CSV<br/>data/product_catalogue.csv<br/>[25 Verified SMB Products]")]:::dataStyle
+        GSTINRegistry[("Mock GSTIN Registry<br/>mock_gstin_registry.csv<br/>[3,534 Tax Records]")]:::dataStyle
+        UdyamRegistry[("Mock Udyam Registry<br/>mock_udyam_registry.csv<br/>[2,723 MSME Records]")]:::dataStyle
+        LeadsDataset[("SMB Leads Dataset<br/>data/smb_leads.csv<br/>[5,000 Historical Records]")]:::dataStyle
+        OrdersStore[("Orders JSON Store<br/>data/orders.json<br/>[Order Persistence]")]:::dataStyle
+    end
+
+    EligibilityEngine -.->|"Read Rules & Tiers"| CatalogueCSV
+    PricingEngine -.->|"Read Rates & Setup"| CatalogueCSV
+    AnalyticsEngine -.->|"Funnel Aggregations"| LeadsDataset
+
+    %% ==========================================
+    %% LAYER 6: EXTERNAL INTEGRATIONS & BOUNDARIES
+    %% ==========================================
+    subgraph L6 ["Layer 6: External Integrations & Boundary Interfaces"]
+        direction LR
+        GeminiAPI[["Google Gemini API<br/>(gemini-3.1-flash-lite over IPv4)<br/>[IMPLEMENTED • OPTIONAL]"]]:::extActiveStyle
+        TesseractBinary[["Tesseract OCR Engine<br/>(Local System: tesseract.exe)<br/>[IMPLEMENTED • LOCAL]"]]:::extActiveStyle
+        MockRegistryAPIs[["Simulated Statutory Registry APIs<br/>(Mock GSTIN & Udyam Lookups)<br/>[MOCK IMPLEMENTATION]"]]:::extMockStyle
+        SimulatedBanking[["Simulated Payment Gateway<br/>(e-NACH, UPI Autopay Mandate)<br/>[SIMULATED IMPLEMENTATION]"]]:::extMockStyle
+        SimulatedTelecom[["Simulated Telecom BSS/OSS Provisioning<br/>(Feasibility, Circuit Allocation, Last-Mile)<br/>[SIMULATED STATE MACHINE]"]]:::extMockStyle
+    end
+
+    AdvisorRouter -.->|"Optional AI Extraction"| GeminiAPI
+    OCRPipeline -.->|"Local OCR Invocation"| TesseractBinary
+    GSTINValidator -.->|"Cross-Check ID"| MockRegistryAPIs
+    MockRegistryAPIs -.->|"Query Taxpayer"| GSTINRegistry
+    MockRegistryAPIs -.->|"Query MSME"| UdyamRegistry
+    OrdersMgr -->|"Submit Mandate"| SimulatedBanking
+    OrdersMgr -->|"Initialize Provisioning"| SimulatedTelecom
+
+    %% ==========================================
+    %% ARCHITECTURE LEGEND
+    %% ==========================================
+    subgraph Legend ["Architecture Legend & Interface Conventions"]
+        direction LR
+        L_Actor["Actor / Role"]:::actorStyle
+        L_UI["UI Presentation Layer"]:::uiStyle
+        L_App["Application Core"]:::appStyle
+        L_Intel["Intelligence & Rules"]:::intelStyle
+        L_Price["Pricing & Costing"]:::priceStyle
+        L_Data[("Local Storage / Dataset")]:::dataStyle
+        L_ExtAct[["External Implemented"]]:::extActiveStyle
+        L_ExtMock[["Simulated / Mock Service"]]:::extMockStyle
+    end
