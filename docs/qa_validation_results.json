@@ -1,0 +1,2203 @@
+{
+  "phase1_catalogue": {
+    "total_products": 25,
+    "matrix": [
+      {
+        "product_id": "P01",
+        "product_name": "Biz Fibre 100",
+        "category": "Connectivity",
+        "unit": "per site",
+        "price_min": 999,
+        "price_max": 1199,
+        "setup_fee": 0,
+        "min_contract_months": 12,
+        "tiers": "1;2",
+        "min_emp": 1,
+        "min_sites": 1,
+        "requires_gstin": "N",
+        "requires_one_of": "",
+        "install_days": 5,
+        "segments": "micro;prof"
+      },
+      {
+        "product_id": "P02",
+        "product_name": "Biz Fibre 300",
+        "category": "Connectivity",
+        "unit": "per site",
+        "price_min": 1499,
+        "price_max": 1799,
+        "setup_fee": 0,
+        "min_contract_months": 12,
+        "tiers": "1;2",
+        "min_emp": 1,
+        "min_sites": 1,
+        "requires_gstin": "N",
+        "requires_one_of": "",
+        "install_days": 5,
+        "segments": "prof;multi"
+      },
+      {
+        "product_id": "P03",
+        "product_name": "Biz Fibre 1G",
+        "category": "Connectivity",
+        "unit": "per site",
+        "price_min": 3999,
+        "price_max": 4499,
+        "setup_fee": 0,
+        "min_contract_months": 12,
+        "tiers": "1",
+        "min_emp": 5,
+        "min_sites": 1,
+        "requires_gstin": "Y",
+        "requires_one_of": "",
+        "install_days": 7,
+        "segments": "prof;multi;mfg"
+      },
+      {
+        "product_id": "P04",
+        "product_name": "Biz 5G AirFiber 100",
+        "category": "Connectivity",
+        "unit": "per site",
+        "price_min": 899,
+        "price_max": 1099,
+        "setup_fee": 0,
+        "min_contract_months": 6,
+        "tiers": "1;2",
+        "min_emp": 1,
+        "min_sites": 1,
+        "requires_gstin": "N",
+        "requires_one_of": "",
+        "install_days": 2,
+        "segments": "micro;prof"
+      },
+      {
+        "product_id": "P05",
+        "product_name": "Internet Leased Line 20",
+        "category": "Connectivity",
+        "unit": "per site",
+        "price_min": 8000,
+        "price_max": 12000,
+        "setup_fee": 10000,
+        "min_contract_months": 12,
+        "tiers": "1;2",
+        "min_emp": 10,
+        "min_sites": 1,
+        "requires_gstin": "Y",
+        "requires_one_of": "",
+        "install_days": 21,
+        "segments": "mfg;multi"
+      },
+      {
+        "product_id": "P06",
+        "product_name": "Internet Leased Line 100",
+        "category": "Connectivity",
+        "unit": "per site",
+        "price_min": 25000,
+        "price_max": 35000,
+        "setup_fee": 15000,
+        "min_contract_months": 24,
+        "tiers": "1;2",
+        "min_emp": 25,
+        "min_sites": 1,
+        "requires_gstin": "Y",
+        "requires_one_of": "",
+        "install_days": 30,
+        "segments": "mfg"
+      },
+      {
+        "product_id": "P07",
+        "product_name": "Business Postpaid 299",
+        "category": "Connectivity",
+        "unit": "per line",
+        "price_min": 299,
+        "price_max": 399,
+        "setup_fee": 0,
+        "min_contract_months": 1,
+        "tiers": "1;2",
+        "min_emp": 1,
+        "min_sites": 1,
+        "requires_gstin": "N",
+        "requires_one_of": "",
+        "install_days": 1,
+        "segments": "micro;prof;multi;mfg"
+      },
+      {
+        "product_id": "P08",
+        "product_name": "Business Postpaid 599",
+        "category": "Connectivity",
+        "unit": "per line",
+        "price_min": 599,
+        "price_max": 799,
+        "setup_fee": 0,
+        "min_contract_months": 1,
+        "tiers": "1;2",
+        "min_emp": 1,
+        "min_sites": 1,
+        "requires_gstin": "N",
+        "requires_one_of": "",
+        "install_days": 1,
+        "segments": "prof;multi;mfg"
+      },
+      {
+        "product_id": "P09",
+        "product_name": "Backup 4G/5G Failover",
+        "category": "Connectivity",
+        "unit": "per site",
+        "price_min": 499,
+        "price_max": 599,
+        "setup_fee": 1500,
+        "min_contract_months": 12,
+        "tiers": "1;2",
+        "min_emp": 1,
+        "min_sites": 1,
+        "requires_gstin": "N",
+        "requires_one_of": "P01|P02|P03|P05|P06",
+        "install_days": 3,
+        "segments": "multi;prof"
+      },
+      {
+        "product_id": "P10",
+        "product_name": "Managed SD-WAN",
+        "category": "Connectivity",
+        "unit": "per site",
+        "price_min": 2500,
+        "price_max": 3500,
+        "setup_fee": 5000,
+        "min_contract_months": 24,
+        "tiers": "1;2",
+        "min_emp": 10,
+        "min_sites": 3,
+        "requires_gstin": "Y",
+        "requires_one_of": "P01|P02|P03|P05|P06",
+        "install_days": 14,
+        "segments": "multi"
+      },
+      {
+        "product_id": "P11",
+        "product_name": "Static IP",
+        "category": "Connectivity",
+        "unit": "per IP",
+        "price_min": 200,
+        "price_max": 300,
+        "setup_fee": 0,
+        "min_contract_months": 12,
+        "tiers": "1;2",
+        "min_emp": 1,
+        "min_sites": 1,
+        "requires_gstin": "N",
+        "requires_one_of": "P01|P02|P03",
+        "install_days": 1,
+        "segments": "prof;mfg"
+      },
+      {
+        "product_id": "P12",
+        "product_name": "Cloud Telephony / SIP",
+        "category": "Communication",
+        "unit": "per channel",
+        "price_min": 1000,
+        "price_max": 1500,
+        "setup_fee": 2000,
+        "min_contract_months": 12,
+        "tiers": "1;2",
+        "min_emp": 3,
+        "min_sites": 1,
+        "requires_gstin": "Y",
+        "requires_one_of": "P01|P02|P03|P04|P05|P06",
+        "install_days": 5,
+        "segments": "prof;multi"
+      },
+      {
+        "product_id": "P13",
+        "product_name": "Toll-free Number",
+        "category": "Communication",
+        "unit": "per number",
+        "price_min": 1500,
+        "price_max": 2000,
+        "setup_fee": 1000,
+        "min_contract_months": 12,
+        "tiers": "1;2",
+        "min_emp": 1,
+        "min_sites": 1,
+        "requires_gstin": "Y",
+        "requires_one_of": "",
+        "install_days": 3,
+        "segments": "multi;prof"
+      },
+      {
+        "product_id": "P14",
+        "product_name": "Business SMS 10k",
+        "category": "Communication",
+        "unit": "per pack",
+        "price_min": 1500,
+        "price_max": 2000,
+        "setup_fee": 0,
+        "min_contract_months": 1,
+        "tiers": "1;2",
+        "min_emp": 1,
+        "min_sites": 1,
+        "requires_gstin": "Y",
+        "requires_one_of": "",
+        "install_days": 4,
+        "segments": "prof;multi;micro"
+      },
+      {
+        "product_id": "P15",
+        "product_name": "WhatsApp Business API Starter",
+        "category": "Communication",
+        "unit": "per account",
+        "price_min": 999,
+        "price_max": 1499,
+        "setup_fee": 0,
+        "min_contract_months": 3,
+        "tiers": "1;2",
+        "min_emp": 1,
+        "min_sites": 1,
+        "requires_gstin": "Y",
+        "requires_one_of": "",
+        "install_days": 3,
+        "segments": "micro;prof;multi"
+      },
+      {
+        "product_id": "P16",
+        "product_name": "Cloud Email & Office Suite",
+        "category": "Cloud & Productivity",
+        "unit": "per user",
+        "price_min": 125,
+        "price_max": 150,
+        "setup_fee": 0,
+        "min_contract_months": 12,
+        "tiers": "1;2",
+        "min_emp": 1,
+        "min_sites": 1,
+        "requires_gstin": "N",
+        "requires_one_of": "",
+        "install_days": 1,
+        "segments": "prof;multi;mfg"
+      },
+      {
+        "product_id": "P17",
+        "product_name": "Cloud Backup 1 TB",
+        "category": "Cloud & Productivity",
+        "unit": "per account",
+        "price_min": 499,
+        "price_max": 699,
+        "setup_fee": 0,
+        "min_contract_months": 12,
+        "tiers": "1;2",
+        "min_emp": 1,
+        "min_sites": 1,
+        "requires_gstin": "N",
+        "requires_one_of": "",
+        "install_days": 1,
+        "segments": "prof;mfg"
+      },
+      {
+        "product_id": "P18",
+        "product_name": "Website + Domain Starter",
+        "category": "Cloud & Productivity",
+        "unit": "per account",
+        "price_min": 299,
+        "price_max": 499,
+        "setup_fee": 0,
+        "min_contract_months": 12,
+        "tiers": "1;2",
+        "min_emp": 1,
+        "min_sites": 1,
+        "requires_gstin": "N",
+        "requires_one_of": "",
+        "install_days": 2,
+        "segments": "micro;prof"
+      },
+      {
+        "product_id": "P19",
+        "product_name": "Cloud POS & Billing",
+        "category": "Cloud & Productivity",
+        "unit": "per counter",
+        "price_min": 599,
+        "price_max": 899,
+        "setup_fee": 2500,
+        "min_contract_months": 12,
+        "tiers": "1;2",
+        "min_emp": 1,
+        "min_sites": 1,
+        "requires_gstin": "N",
+        "requires_one_of": "",
+        "install_days": 3,
+        "segments": "micro;multi"
+      },
+      {
+        "product_id": "P20",
+        "product_name": "Endpoint Security",
+        "category": "Security",
+        "unit": "per device",
+        "price_min": 99,
+        "price_max": 149,
+        "setup_fee": 0,
+        "min_contract_months": 12,
+        "tiers": "1;2",
+        "min_emp": 1,
+        "min_sites": 1,
+        "requires_gstin": "N",
+        "requires_one_of": "",
+        "install_days": 1,
+        "segments": "prof;mfg;multi"
+      },
+      {
+        "product_id": "P21",
+        "product_name": "Managed Firewall",
+        "category": "Security",
+        "unit": "per site",
+        "price_min": 1999,
+        "price_max": 2999,
+        "setup_fee": 4000,
+        "min_contract_months": 24,
+        "tiers": "1;2",
+        "min_emp": 10,
+        "min_sites": 1,
+        "requires_gstin": "Y",
+        "requires_one_of": "P01|P02|P03|P05|P06",
+        "install_days": 10,
+        "segments": "mfg;multi;prof"
+      },
+      {
+        "product_id": "P22",
+        "product_name": "Secure Wi-Fi with Guest Network",
+        "category": "Security",
+        "unit": "per site",
+        "price_min": 399,
+        "price_max": 599,
+        "setup_fee": 1000,
+        "min_contract_months": 12,
+        "tiers": "1;2",
+        "min_emp": 1,
+        "min_sites": 1,
+        "requires_gstin": "N",
+        "requires_one_of": "P01|P02|P03|P04",
+        "install_days": 3,
+        "segments": "micro;multi;prof"
+      },
+      {
+        "product_id": "P23",
+        "product_name": "Cloud CCTV",
+        "category": "IoT & Physical",
+        "unit": "per camera",
+        "price_min": 199,
+        "price_max": 299,
+        "setup_fee": 1800,
+        "min_contract_months": 12,
+        "tiers": "1;2",
+        "min_emp": 1,
+        "min_sites": 1,
+        "requires_gstin": "N",
+        "requires_one_of": "P01|P02|P03|P04|P05|P06",
+        "install_days": 4,
+        "segments": "micro;multi;mfg"
+      },
+      {
+        "product_id": "P24",
+        "product_name": "Machine Monitoring IoT",
+        "category": "IoT & Physical",
+        "unit": "per device",
+        "price_min": 149,
+        "price_max": 249,
+        "setup_fee": 3000,
+        "min_contract_months": 24,
+        "tiers": "1;2",
+        "min_emp": 10,
+        "min_sites": 1,
+        "requires_gstin": "Y",
+        "requires_one_of": "",
+        "install_days": 10,
+        "segments": "mfg"
+      },
+      {
+        "product_id": "P25",
+        "product_name": "Fleet Tracker",
+        "category": "IoT & Physical",
+        "unit": "per vehicle",
+        "price_min": 199,
+        "price_max": 299,
+        "setup_fee": 1500,
+        "min_contract_months": 12,
+        "tiers": "1;2",
+        "min_emp": 1,
+        "min_sites": 1,
+        "requires_gstin": "N",
+        "requires_one_of": "",
+        "install_days": 3,
+        "segments": "multi;mfg"
+      }
+    ]
+  },
+  "phase2_scenarios": [
+    {
+      "scenario_id": "TC01",
+      "name": "Dental Clinic",
+      "profile": {
+        "business_name": "Smile Dental Care",
+        "business_type": "Dental Clinic",
+        "segment": "prof",
+        "employee_count": 5,
+        "num_sites": 1,
+        "city": "Bengaluru",
+        "city_tier": 1,
+        "is_known_city": true,
+        "has_gstin": true,
+        "gstin": "29CPSXS6426Z1ZL",
+        "stated_needs": [
+          "broadband",
+          "cloud backup",
+          "email",
+          "voice_lines"
+        ]
+      },
+      "recommended_pids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P09",
+        "P12",
+        "P13",
+        "P16",
+        "P17"
+      ],
+      "recommended_items": [
+        {
+          "product_id": "P01",
+          "product_name": "Biz Fibre 100",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 999,
+          "monthly_amount": 999,
+          "setup_fee": 0,
+          "reason": "Matched your request for Biz Fibre 100 to boost business operations",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P02",
+          "product_name": "Biz Fibre 300",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 1499,
+          "monthly_amount": 1499,
+          "setup_fee": 0,
+          "reason": "Biz Fibre 300 Mbps business broadband for fast client consultations and secure transfers",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P03",
+          "product_name": "Biz Fibre 1G",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 3999,
+          "monthly_amount": 3999,
+          "setup_fee": 0,
+          "reason": "Matched your request for Biz Fibre 1G to boost business operations",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P04",
+          "product_name": "Biz 5G AirFiber 100",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 899,
+          "monthly_amount": 899,
+          "setup_fee": 0,
+          "reason": "Matched your request for Biz 5G AirFiber 100 to boost business operations",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P09",
+          "product_name": "Backup 4G/5G Failover",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 499,
+          "monthly_amount": 499,
+          "setup_fee": 1500,
+          "reason": "Matched your request for Backup 4G/5G Failover to boost business operations",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P12",
+          "product_name": "Cloud Telephony / SIP",
+          "quantity": 5,
+          "unit": "per channel",
+          "price_min": 1000,
+          "monthly_amount": 5000,
+          "setup_fee": 10000,
+          "reason": "Matched your request for Cloud Telephony / SIP to boost business operations",
+          "assumption": "5 SIP trunk channels for simultaneous customer calls"
+        },
+        {
+          "product_id": "P13",
+          "product_name": "Toll-free Number",
+          "quantity": 1,
+          "unit": "per number",
+          "price_min": 1500,
+          "monthly_amount": 1500,
+          "setup_fee": 1000,
+          "reason": "Matched your request for Toll-free Number to boost business operations",
+          "assumption": "1 dedicated 1800 toll-free virtual number"
+        },
+        {
+          "product_id": "P16",
+          "product_name": "Cloud Email & Office Suite",
+          "quantity": 5,
+          "unit": "per user",
+          "price_min": 125,
+          "monthly_amount": 625,
+          "setup_fee": 0,
+          "reason": "Matched your request for Cloud Email & Office Suite to boost business operations",
+          "assumption": "1 user seat per employee (5 employees)"
+        },
+        {
+          "product_id": "P17",
+          "product_name": "Cloud Backup 1 TB",
+          "quantity": 1,
+          "unit": "per account",
+          "price_min": 499,
+          "monthly_amount": 499,
+          "setup_fee": 0,
+          "reason": "Matched your request for Cloud Backup 1 TB to boost business operations",
+          "assumption": "1 primary organizational subscription account"
+        }
+      ],
+      "pricing": {
+        "monthly_subtotal": 15519,
+        "one_time_subtotal": 12500,
+        "first_month_payable": 28019,
+        "contract_months": 12,
+        "total_contract_value": 198728,
+        "max_install_days": 7,
+        "price_match_with_oracle": true
+      },
+      "budget_result": null,
+      "status": "PASS",
+      "observations": []
+    },
+    {
+      "scenario_id": "TC02",
+      "name": "Retail Store",
+      "profile": {
+        "business_name": "Modern Trendz",
+        "business_type": "Retail Store",
+        "segment": "micro",
+        "employee_count": 3,
+        "num_sites": 1,
+        "city": "Chennai",
+        "city_tier": 1,
+        "is_known_city": true,
+        "has_gstin": true,
+        "gstin": "33MFTXS9954Q1Z9",
+        "stated_needs": [
+          "broadband",
+          "pos",
+          "payments",
+          "cctv",
+          "mobile"
+        ]
+      },
+      "recommended_pids": [
+        "P01",
+        "P02",
+        "P04",
+        "P07",
+        "P08",
+        "P19",
+        "P23"
+      ],
+      "recommended_items": [
+        {
+          "product_id": "P01",
+          "product_name": "Biz Fibre 100",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 999,
+          "monthly_amount": 999,
+          "setup_fee": 0,
+          "reason": "Cost-effective Biz Fibre 100 Mbps broadband with unlimited data",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P02",
+          "product_name": "Biz Fibre 300",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 1499,
+          "monthly_amount": 1499,
+          "setup_fee": 0,
+          "reason": "Matched your request for Biz Fibre 300 to boost business operations",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P04",
+          "product_name": "Biz 5G AirFiber 100",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 899,
+          "monthly_amount": 899,
+          "setup_fee": 0,
+          "reason": "Matched your request for Biz 5G AirFiber 100 to boost business operations",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P07",
+          "product_name": "Business Postpaid 299",
+          "quantity": 3,
+          "unit": "per line",
+          "price_min": 299,
+          "monthly_amount": 897,
+          "setup_fee": 0,
+          "reason": "Matched your request for Business Postpaid 299 to boost business operations",
+          "assumption": "1 business mobile connection per employee (3 lines)"
+        },
+        {
+          "product_id": "P08",
+          "product_name": "Business Postpaid 599",
+          "quantity": 3,
+          "unit": "per line",
+          "price_min": 599,
+          "monthly_amount": 1797,
+          "setup_fee": 0,
+          "reason": "Matched your request for Business Postpaid 599 to boost business operations",
+          "assumption": "1 business mobile connection per employee (3 lines)"
+        },
+        {
+          "product_id": "P19",
+          "product_name": "Cloud POS & Billing",
+          "quantity": 1,
+          "unit": "per counter",
+          "price_min": 599,
+          "monthly_amount": 599,
+          "setup_fee": 2500,
+          "reason": "Matched your request for Cloud POS & Billing to boost business operations",
+          "assumption": "1 POS billing counter per site (1 counter(s))"
+        },
+        {
+          "product_id": "P23",
+          "product_name": "Cloud CCTV",
+          "quantity": 2,
+          "unit": "per camera",
+          "price_min": 199,
+          "monthly_amount": 398,
+          "setup_fee": 3600,
+          "reason": "Matched your request for Cloud CCTV to boost business operations",
+          "assumption": "Standard coverage: 2 cloud CCTV cameras per site (2 cameras total)"
+        }
+      ],
+      "pricing": {
+        "monthly_subtotal": 7088,
+        "one_time_subtotal": 6100,
+        "first_month_payable": 13188,
+        "contract_months": 12,
+        "total_contract_value": 91156,
+        "max_install_days": 5,
+        "price_match_with_oracle": true
+      },
+      "budget_result": null,
+      "status": "PASS",
+      "observations": []
+    },
+    {
+      "scenario_id": "TC03",
+      "name": "Manufacturing Facility",
+      "profile": {
+        "business_name": "Precision Auto Parts",
+        "business_type": "Manufacturing",
+        "segment": "mfg",
+        "employee_count": 35,
+        "num_sites": 1,
+        "city": "Coimbatore",
+        "city_tier": 2,
+        "is_known_city": true,
+        "has_gstin": true,
+        "gstin": "33PBWXO2282E1ZL",
+        "stated_needs": [
+          "dedicated internet",
+          "static ip",
+          "firewall",
+          "security",
+          "iot"
+        ]
+      },
+      "recommended_pids": [
+        "P01",
+        "P02",
+        "P04",
+        "P05",
+        "P06",
+        "P11",
+        "P20",
+        "P21",
+        "P22",
+        "P24",
+        "P25"
+      ],
+      "recommended_items": [
+        {
+          "product_id": "P01",
+          "product_name": "Biz Fibre 100",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 999,
+          "monthly_amount": 999,
+          "setup_fee": 0,
+          "reason": "Matched your request for Biz Fibre 100 to boost business operations",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P02",
+          "product_name": "Biz Fibre 300",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 1499,
+          "monthly_amount": 1499,
+          "setup_fee": 0,
+          "reason": "Matched your request for Biz Fibre 300 to boost business operations",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P04",
+          "product_name": "Biz 5G AirFiber 100",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 899,
+          "monthly_amount": 899,
+          "setup_fee": 0,
+          "reason": "Matched your request for Biz 5G AirFiber 100 to boost business operations",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P05",
+          "product_name": "Internet Leased Line 20",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 8000,
+          "monthly_amount": 8000,
+          "setup_fee": 10000,
+          "reason": "Matched your request for Internet Leased Line 20 to boost business operations",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P06",
+          "product_name": "Internet Leased Line 100",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 25000,
+          "monthly_amount": 25000,
+          "setup_fee": 15000,
+          "reason": "High-availability 100 Mbps leased line with dedicated 99.9% SLA for manufacturing uptime",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P11",
+          "product_name": "Static IP",
+          "quantity": 1,
+          "unit": "per IP",
+          "price_min": 200,
+          "monthly_amount": 200,
+          "setup_fee": 0,
+          "reason": "Matched your request for Static IP to boost business operations",
+          "assumption": "1 static public IPv4 allocation for secure remote access"
+        },
+        {
+          "product_id": "P20",
+          "product_name": "Endpoint Security",
+          "quantity": 35,
+          "unit": "per device",
+          "price_min": 99,
+          "monthly_amount": 3465,
+          "setup_fee": 0,
+          "reason": "Matched your request for Endpoint Security to boost business operations",
+          "assumption": "1 antivirus license per employee PC/workstation (35 devices)"
+        },
+        {
+          "product_id": "P21",
+          "product_name": "Managed Firewall",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 1999,
+          "monthly_amount": 1999,
+          "setup_fee": 4000,
+          "reason": "Matched your request for Managed Firewall to boost business operations",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P22",
+          "product_name": "Secure Wi-Fi with Guest Network",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 399,
+          "monthly_amount": 399,
+          "setup_fee": 1000,
+          "reason": "Matched your request for Secure Wi-Fi with Guest Network to boost business operations",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P24",
+          "product_name": "Machine Monitoring IoT",
+          "quantity": 10,
+          "unit": "per device",
+          "price_min": 149,
+          "monthly_amount": 1490,
+          "setup_fee": 30000,
+          "reason": "Matched your request for Machine Monitoring IoT to boost business operations",
+          "assumption": "Standard industrial starter kit: 10 machine sensors"
+        },
+        {
+          "product_id": "P25",
+          "product_name": "Fleet Tracker",
+          "quantity": 1,
+          "unit": "per vehicle",
+          "price_min": 199,
+          "monthly_amount": 199,
+          "setup_fee": 1500,
+          "reason": "Matched your request for Fleet Tracker to boost business operations",
+          "assumption": "Default fleet tracking for 1 company vehicle(s)"
+        }
+      ],
+      "pricing": {
+        "monthly_subtotal": 44149,
+        "one_time_subtotal": 61500,
+        "first_month_payable": 105649,
+        "contract_months": 24,
+        "total_contract_value": 1121076,
+        "max_install_days": 30,
+        "price_match_with_oracle": true
+      },
+      "budget_result": null,
+      "status": "PASS",
+      "observations": []
+    },
+    {
+      "scenario_id": "TC04",
+      "name": "Restaurant Chain",
+      "profile": {
+        "business_name": "Spice Route Diners",
+        "business_type": "Restaurant Chain",
+        "segment": "multi",
+        "employee_count": 18,
+        "num_sites": 3,
+        "city": "Madurai",
+        "city_tier": 2,
+        "is_known_city": false,
+        "has_gstin": true,
+        "gstin": "33MFTXS9954Q1Z9",
+        "stated_needs": [
+          "broadband",
+          "sd-wan",
+          "pos",
+          "wifi",
+          "cctv",
+          "whatsapp"
+        ]
+      },
+      "recommended_pids": [
+        "P01",
+        "P02",
+        "P04",
+        "P05",
+        "P10",
+        "P15",
+        "P19",
+        "P22",
+        "P23"
+      ],
+      "recommended_items": [
+        {
+          "product_id": "P01",
+          "product_name": "Biz Fibre 100",
+          "quantity": 3,
+          "unit": "per site",
+          "price_min": 999,
+          "monthly_amount": 2997,
+          "setup_fee": 0,
+          "reason": "Matched your request for Biz Fibre 100 to boost business operations",
+          "assumption": "1 deployment per site across 3 site(s)"
+        },
+        {
+          "product_id": "P02",
+          "product_name": "Biz Fibre 300",
+          "quantity": 3,
+          "unit": "per site",
+          "price_min": 1499,
+          "monthly_amount": 4497,
+          "setup_fee": 0,
+          "reason": "Biz Fibre 300 Mbps across 3 branch locations",
+          "assumption": "1 deployment per site across 3 site(s)"
+        },
+        {
+          "product_id": "P04",
+          "product_name": "Biz 5G AirFiber 100",
+          "quantity": 3,
+          "unit": "per site",
+          "price_min": 899,
+          "monthly_amount": 2697,
+          "setup_fee": 0,
+          "reason": "Matched your request for Biz 5G AirFiber 100 to boost business operations",
+          "assumption": "1 deployment per site across 3 site(s)"
+        },
+        {
+          "product_id": "P05",
+          "product_name": "Internet Leased Line 20",
+          "quantity": 3,
+          "unit": "per site",
+          "price_min": 8000,
+          "monthly_amount": 24000,
+          "setup_fee": 30000,
+          "reason": "Matched your request for Internet Leased Line 20 to boost business operations",
+          "assumption": "1 deployment per site across 3 site(s)"
+        },
+        {
+          "product_id": "P10",
+          "product_name": "Managed SD-WAN",
+          "quantity": 3,
+          "unit": "per site",
+          "price_min": 2500,
+          "monthly_amount": 7500,
+          "setup_fee": 15000,
+          "reason": "Matched your request for Managed SD-WAN to boost business operations",
+          "assumption": "1 deployment per site across 3 site(s)"
+        },
+        {
+          "product_id": "P15",
+          "product_name": "WhatsApp Business API Starter",
+          "quantity": 1,
+          "unit": "per account",
+          "price_min": 999,
+          "monthly_amount": 999,
+          "setup_fee": 0,
+          "reason": "Matched your request for WhatsApp Business API Starter to boost business operations",
+          "assumption": "1 primary organizational subscription account"
+        },
+        {
+          "product_id": "P19",
+          "product_name": "Cloud POS & Billing",
+          "quantity": 3,
+          "unit": "per counter",
+          "price_min": 599,
+          "monthly_amount": 1797,
+          "setup_fee": 7500,
+          "reason": "Matched your request for Cloud POS & Billing to boost business operations",
+          "assumption": "1 POS billing counter per site (3 counter(s))"
+        },
+        {
+          "product_id": "P22",
+          "product_name": "Secure Wi-Fi with Guest Network",
+          "quantity": 3,
+          "unit": "per site",
+          "price_min": 399,
+          "monthly_amount": 1197,
+          "setup_fee": 3000,
+          "reason": "Matched your request for Secure Wi-Fi with Guest Network to boost business operations",
+          "assumption": "1 deployment per site across 3 site(s)"
+        },
+        {
+          "product_id": "P23",
+          "product_name": "Cloud CCTV",
+          "quantity": 6,
+          "unit": "per camera",
+          "price_min": 199,
+          "monthly_amount": 1194,
+          "setup_fee": 10800,
+          "reason": "Matched your request for Cloud CCTV to boost business operations",
+          "assumption": "Standard coverage: 2 cloud CCTV cameras per site (6 cameras total)"
+        }
+      ],
+      "pricing": {
+        "monthly_subtotal": 46878,
+        "one_time_subtotal": 66300,
+        "first_month_payable": 113178,
+        "contract_months": 24,
+        "total_contract_value": 1191372,
+        "max_install_days": 21,
+        "price_match_with_oracle": true
+      },
+      "budget_result": null,
+      "status": "PASS",
+      "observations": [
+        "City 'Madurai' not in smb_leads.csv; silently defaulted to Tier 2"
+      ]
+    },
+    {
+      "scenario_id": "TC05",
+      "name": "Software Development Agency",
+      "profile": {
+        "business_name": "Apex Cloud Labs",
+        "business_type": "Software Development",
+        "segment": "micro",
+        "employee_count": 25,
+        "num_sites": 1,
+        "city": "Bengaluru",
+        "city_tier": 1,
+        "is_known_city": true,
+        "has_gstin": true,
+        "gstin": "29CPSXS6426Z1ZL",
+        "stated_needs": [
+          "broadband",
+          "fibre",
+          "static ip",
+          "email",
+          "backup",
+          "security"
+        ]
+      },
+      "recommended_pids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P09",
+        "P11",
+        "P16",
+        "P17",
+        "P20",
+        "P21",
+        "P22"
+      ],
+      "recommended_items": [
+        {
+          "product_id": "P01",
+          "product_name": "Biz Fibre 100",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 999,
+          "monthly_amount": 999,
+          "setup_fee": 0,
+          "reason": "Cost-effective Biz Fibre 100 Mbps broadband with unlimited data",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P02",
+          "product_name": "Biz Fibre 300",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 1499,
+          "monthly_amount": 1499,
+          "setup_fee": 0,
+          "reason": "Matched your request for Biz Fibre 300 to boost business operations",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P03",
+          "product_name": "Biz Fibre 1G",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 3999,
+          "monthly_amount": 3999,
+          "setup_fee": 0,
+          "reason": "Matched your request for Biz Fibre 1G to boost business operations",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P04",
+          "product_name": "Biz 5G AirFiber 100",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 899,
+          "monthly_amount": 899,
+          "setup_fee": 0,
+          "reason": "Matched your request for Biz 5G AirFiber 100 to boost business operations",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P05",
+          "product_name": "Internet Leased Line 20",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 8000,
+          "monthly_amount": 8000,
+          "setup_fee": 10000,
+          "reason": "Matched your request for Internet Leased Line 20 to boost business operations",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P06",
+          "product_name": "Internet Leased Line 100",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 25000,
+          "monthly_amount": 25000,
+          "setup_fee": 15000,
+          "reason": "Matched your request for Internet Leased Line 100 to boost business operations",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P09",
+          "product_name": "Backup 4G/5G Failover",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 499,
+          "monthly_amount": 499,
+          "setup_fee": 1500,
+          "reason": "Matched your request for Backup 4G/5G Failover to boost business operations",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P11",
+          "product_name": "Static IP",
+          "quantity": 1,
+          "unit": "per IP",
+          "price_min": 200,
+          "monthly_amount": 200,
+          "setup_fee": 0,
+          "reason": "Matched your request for Static IP to boost business operations",
+          "assumption": "1 static public IPv4 allocation for secure remote access"
+        },
+        {
+          "product_id": "P16",
+          "product_name": "Cloud Email & Office Suite",
+          "quantity": 25,
+          "unit": "per user",
+          "price_min": 125,
+          "monthly_amount": 3125,
+          "setup_fee": 0,
+          "reason": "Matched your request for Cloud Email & Office Suite to boost business operations",
+          "assumption": "1 user seat per employee (25 employees)"
+        },
+        {
+          "product_id": "P17",
+          "product_name": "Cloud Backup 1 TB",
+          "quantity": 1,
+          "unit": "per account",
+          "price_min": 499,
+          "monthly_amount": 499,
+          "setup_fee": 0,
+          "reason": "Matched your request for Cloud Backup 1 TB to boost business operations",
+          "assumption": "1 primary organizational subscription account"
+        },
+        {
+          "product_id": "P20",
+          "product_name": "Endpoint Security",
+          "quantity": 25,
+          "unit": "per device",
+          "price_min": 99,
+          "monthly_amount": 2475,
+          "setup_fee": 0,
+          "reason": "Matched your request for Endpoint Security to boost business operations",
+          "assumption": "1 antivirus license per employee PC/workstation (25 devices)"
+        },
+        {
+          "product_id": "P21",
+          "product_name": "Managed Firewall",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 1999,
+          "monthly_amount": 1999,
+          "setup_fee": 4000,
+          "reason": "Matched your request for Managed Firewall to boost business operations",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P22",
+          "product_name": "Secure Wi-Fi with Guest Network",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 399,
+          "monthly_amount": 399,
+          "setup_fee": 1000,
+          "reason": "Matched your request for Secure Wi-Fi with Guest Network to boost business operations",
+          "assumption": "1 deployment per site across 1 site(s)"
+        }
+      ],
+      "pricing": {
+        "monthly_subtotal": 49592,
+        "one_time_subtotal": 31500,
+        "first_month_payable": 81092,
+        "contract_months": 24,
+        "total_contract_value": 1221708,
+        "max_install_days": 30,
+        "price_match_with_oracle": true
+      },
+      "budget_result": null,
+      "status": "PASS",
+      "observations": []
+    },
+    {
+      "scenario_id": "TC06",
+      "name": "Logistics & Fleet Company",
+      "profile": {
+        "business_name": "SwiftLine Logistics",
+        "business_type": "Logistics & Transport",
+        "segment": "multi",
+        "employee_count": 40,
+        "num_sites": 2,
+        "city": "Hyderabad",
+        "city_tier": 1,
+        "is_known_city": true,
+        "has_gstin": true,
+        "gstin": "36KNNXK2611U1ZM",
+        "stated_needs": [
+          "broadband",
+          "fleet",
+          "failover",
+          "cctv"
+        ]
+      },
+      "recommended_pids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P09",
+        "P23",
+        "P25"
+      ],
+      "recommended_items": [
+        {
+          "product_id": "P01",
+          "product_name": "Biz Fibre 100",
+          "quantity": 2,
+          "unit": "per site",
+          "price_min": 999,
+          "monthly_amount": 1998,
+          "setup_fee": 0,
+          "reason": "Matched your request for Biz Fibre 100 to boost business operations",
+          "assumption": "1 deployment per site across 2 site(s)"
+        },
+        {
+          "product_id": "P02",
+          "product_name": "Biz Fibre 300",
+          "quantity": 2,
+          "unit": "per site",
+          "price_min": 1499,
+          "monthly_amount": 2998,
+          "setup_fee": 0,
+          "reason": "Biz Fibre 300 Mbps across 2 branch locations",
+          "assumption": "1 deployment per site across 2 site(s)"
+        },
+        {
+          "product_id": "P03",
+          "product_name": "Biz Fibre 1G",
+          "quantity": 2,
+          "unit": "per site",
+          "price_min": 3999,
+          "monthly_amount": 7998,
+          "setup_fee": 0,
+          "reason": "Matched your request for Biz Fibre 1G to boost business operations",
+          "assumption": "1 deployment per site across 2 site(s)"
+        },
+        {
+          "product_id": "P04",
+          "product_name": "Biz 5G AirFiber 100",
+          "quantity": 2,
+          "unit": "per site",
+          "price_min": 899,
+          "monthly_amount": 1798,
+          "setup_fee": 0,
+          "reason": "Matched your request for Biz 5G AirFiber 100 to boost business operations",
+          "assumption": "1 deployment per site across 2 site(s)"
+        },
+        {
+          "product_id": "P05",
+          "product_name": "Internet Leased Line 20",
+          "quantity": 2,
+          "unit": "per site",
+          "price_min": 8000,
+          "monthly_amount": 16000,
+          "setup_fee": 20000,
+          "reason": "Matched your request for Internet Leased Line 20 to boost business operations",
+          "assumption": "1 deployment per site across 2 site(s)"
+        },
+        {
+          "product_id": "P06",
+          "product_name": "Internet Leased Line 100",
+          "quantity": 2,
+          "unit": "per site",
+          "price_min": 25000,
+          "monthly_amount": 50000,
+          "setup_fee": 30000,
+          "reason": "Matched your request for Internet Leased Line 100 to boost business operations",
+          "assumption": "1 deployment per site across 2 site(s)"
+        },
+        {
+          "product_id": "P09",
+          "product_name": "Backup 4G/5G Failover",
+          "quantity": 2,
+          "unit": "per site",
+          "price_min": 499,
+          "monthly_amount": 998,
+          "setup_fee": 3000,
+          "reason": "Matched your request for Backup 4G/5G Failover to boost business operations",
+          "assumption": "1 deployment per site across 2 site(s)"
+        },
+        {
+          "product_id": "P23",
+          "product_name": "Cloud CCTV",
+          "quantity": 4,
+          "unit": "per camera",
+          "price_min": 199,
+          "monthly_amount": 796,
+          "setup_fee": 7200,
+          "reason": "Matched your request for Cloud CCTV to boost business operations",
+          "assumption": "Standard coverage: 2 cloud CCTV cameras per site (4 cameras total)"
+        },
+        {
+          "product_id": "P25",
+          "product_name": "Fleet Tracker",
+          "quantity": 25,
+          "unit": "per vehicle",
+          "price_min": 199,
+          "monthly_amount": 4975,
+          "setup_fee": 37500,
+          "reason": "Matched your request for Fleet Tracker to boost business operations",
+          "assumption": "Custom user quantity of 25"
+        }
+      ],
+      "pricing": {
+        "monthly_subtotal": 87561,
+        "one_time_subtotal": 97700,
+        "first_month_payable": 185261,
+        "contract_months": 24,
+        "total_contract_value": 2199164,
+        "max_install_days": 30,
+        "price_match_with_oracle": true
+      },
+      "budget_result": null,
+      "status": "PASS",
+      "observations": []
+    },
+    {
+      "scenario_id": "TC07",
+      "name": "Small Kirana Store",
+      "profile": {
+        "business_name": "Lakshmi Provision Store",
+        "business_type": "Kirana Store",
+        "segment": "micro",
+        "employee_count": 2,
+        "num_sites": 1,
+        "city": "Tirunelveli",
+        "city_tier": 2,
+        "is_known_city": false,
+        "has_gstin": false,
+        "gstin": null,
+        "stated_needs": [
+          "internet",
+          "pos",
+          "cctv",
+          "mobile"
+        ]
+      },
+      "recommended_pids": [
+        "P01",
+        "P02",
+        "P04",
+        "P07",
+        "P08",
+        "P19",
+        "P23"
+      ],
+      "recommended_items": [
+        {
+          "product_id": "P01",
+          "product_name": "Biz Fibre 100",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 999,
+          "monthly_amount": 999,
+          "setup_fee": 0,
+          "reason": "Cost-effective Biz Fibre 100 Mbps broadband with unlimited data",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P02",
+          "product_name": "Biz Fibre 300",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 1499,
+          "monthly_amount": 1499,
+          "setup_fee": 0,
+          "reason": "Matched your request for Biz Fibre 300 to boost business operations",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P04",
+          "product_name": "Biz 5G AirFiber 100",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 899,
+          "monthly_amount": 899,
+          "setup_fee": 0,
+          "reason": "Matched your request for Biz 5G AirFiber 100 to boost business operations",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P07",
+          "product_name": "Business Postpaid 299",
+          "quantity": 2,
+          "unit": "per line",
+          "price_min": 299,
+          "monthly_amount": 598,
+          "setup_fee": 0,
+          "reason": "Matched your request for Business Postpaid 299 to boost business operations",
+          "assumption": "1 business mobile connection per employee (2 lines)"
+        },
+        {
+          "product_id": "P08",
+          "product_name": "Business Postpaid 599",
+          "quantity": 2,
+          "unit": "per line",
+          "price_min": 599,
+          "monthly_amount": 1198,
+          "setup_fee": 0,
+          "reason": "Matched your request for Business Postpaid 599 to boost business operations",
+          "assumption": "1 business mobile connection per employee (2 lines)"
+        },
+        {
+          "product_id": "P19",
+          "product_name": "Cloud POS & Billing",
+          "quantity": 1,
+          "unit": "per counter",
+          "price_min": 599,
+          "monthly_amount": 599,
+          "setup_fee": 2500,
+          "reason": "Matched your request for Cloud POS & Billing to boost business operations",
+          "assumption": "1 POS billing counter per site (1 counter(s))"
+        },
+        {
+          "product_id": "P23",
+          "product_name": "Cloud CCTV",
+          "quantity": 2,
+          "unit": "per camera",
+          "price_min": 199,
+          "monthly_amount": 398,
+          "setup_fee": 3600,
+          "reason": "Matched your request for Cloud CCTV to boost business operations",
+          "assumption": "Standard coverage: 2 cloud CCTV cameras per site (2 cameras total)"
+        }
+      ],
+      "pricing": {
+        "monthly_subtotal": 6190,
+        "one_time_subtotal": 6100,
+        "first_month_payable": 12290,
+        "contract_months": 12,
+        "total_contract_value": 80380,
+        "max_install_days": 5,
+        "price_match_with_oracle": true
+      },
+      "budget_result": {
+        "selected_items": [
+          {
+            "product_id": "P01",
+            "product_name": "Biz Fibre 100",
+            "category": "Connectivity",
+            "quantity": 1,
+            "price_min": 999,
+            "price_max": 1199,
+            "one_time_setup": 0,
+            "unit": "per site",
+            "reason": "Optimized within \u20b93,000/mo budget",
+            "assumption": "1 deployment per site across 1 site(s)"
+          },
+          {
+            "product_id": "P04",
+            "product_name": "Biz 5G AirFiber 100",
+            "category": "Connectivity",
+            "quantity": 1,
+            "price_min": 899,
+            "price_max": 1099,
+            "one_time_setup": 0,
+            "unit": "per site",
+            "reason": "Optimized within \u20b93,000/mo budget",
+            "assumption": "1 deployment per site across 1 site(s)"
+          },
+          {
+            "product_id": "P07",
+            "product_name": "Business Postpaid 299",
+            "category": "Connectivity",
+            "quantity": 2,
+            "price_min": 299,
+            "price_max": 399,
+            "one_time_setup": 0,
+            "unit": "per line",
+            "reason": "Optimized within \u20b93,000/mo budget",
+            "assumption": "1 business mobile connection per employee (2 lines)"
+          },
+          {
+            "product_id": "P23",
+            "product_name": "Cloud CCTV",
+            "category": "IoT & Physical",
+            "quantity": 2,
+            "price_min": 199,
+            "price_max": 299,
+            "one_time_setup": 1800,
+            "unit": "per camera",
+            "reason": "Optimized within \u20b93,000/mo budget",
+            "assumption": "Standard coverage: 2 cloud CCTV cameras per site (2 cameras total)"
+          }
+        ],
+        "total_monthly_cost": 2894,
+        "monthly_budget": 3000,
+        "remaining_budget": 106,
+        "dropped_items": [
+          {
+            "product_id": "P02",
+            "product_name": "Biz Fibre 300",
+            "monthly_cost": 1499,
+            "reason": "Exceeded remaining budget of \u20b9106/mo (product requires \u20b91,499/mo)"
+          },
+          {
+            "product_id": "P08",
+            "product_name": "Business Postpaid 599",
+            "monthly_cost": 1198,
+            "reason": "Exceeded remaining budget of \u20b9106/mo (product requires \u20b91,198/mo)"
+          },
+          {
+            "product_id": "P19",
+            "product_name": "Cloud POS & Billing",
+            "monthly_cost": 599,
+            "reason": "Exceeded remaining budget of \u20b9106/mo (product requires \u20b9599/mo)"
+          }
+        ],
+        "covered_needs": [
+          "internet",
+          "mobile",
+          "cctv"
+        ],
+        "uncovered_needs": [
+          "pos"
+        ],
+        "explanation": "Optimized bundle for \u20b93,000/mo budget: Selected 4 products (Biz Fibre 100, Biz 5G AirFiber 100, Business Postpaid 299, Cloud CCTV) totaling \u20b92,894/mo (\u20b9106 surplus). Could not accommodate: pos within this budget tier."
+      },
+      "status": "PASS",
+      "observations": [
+        "City 'Tirunelveli' not in smb_leads.csv; silently defaulted to Tier 2"
+      ]
+    },
+    {
+      "scenario_id": "TC08",
+      "name": "Educational Institute / Coaching",
+      "profile": {
+        "business_name": "Apex Academy",
+        "business_type": "Educational Coaching Institute",
+        "segment": "prof",
+        "employee_count": 12,
+        "num_sites": 1,
+        "city": "Coimbatore",
+        "city_tier": 2,
+        "is_known_city": true,
+        "has_gstin": true,
+        "gstin": "33PBWXO2282E1ZL",
+        "stated_needs": [
+          "broadband",
+          "wifi",
+          "email",
+          "cctv",
+          "website"
+        ]
+      },
+      "recommended_pids": [
+        "P01",
+        "P02",
+        "P04",
+        "P05",
+        "P16",
+        "P18",
+        "P22",
+        "P23"
+      ],
+      "recommended_items": [
+        {
+          "product_id": "P01",
+          "product_name": "Biz Fibre 100",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 999,
+          "monthly_amount": 999,
+          "setup_fee": 0,
+          "reason": "Matched your request for Biz Fibre 100 to boost business operations",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P02",
+          "product_name": "Biz Fibre 300",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 1499,
+          "monthly_amount": 1499,
+          "setup_fee": 0,
+          "reason": "Biz Fibre 300 Mbps business broadband for fast client consultations and secure transfers",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P04",
+          "product_name": "Biz 5G AirFiber 100",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 899,
+          "monthly_amount": 899,
+          "setup_fee": 0,
+          "reason": "Matched your request for Biz 5G AirFiber 100 to boost business operations",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P05",
+          "product_name": "Internet Leased Line 20",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 8000,
+          "monthly_amount": 8000,
+          "setup_fee": 10000,
+          "reason": "Matched your request for Internet Leased Line 20 to boost business operations",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P16",
+          "product_name": "Cloud Email & Office Suite",
+          "quantity": 12,
+          "unit": "per user",
+          "price_min": 125,
+          "monthly_amount": 1500,
+          "setup_fee": 0,
+          "reason": "Matched your request for Cloud Email & Office Suite to boost business operations",
+          "assumption": "1 user seat per employee (12 employees)"
+        },
+        {
+          "product_id": "P18",
+          "product_name": "Website + Domain Starter",
+          "quantity": 1,
+          "unit": "per account",
+          "price_min": 299,
+          "monthly_amount": 299,
+          "setup_fee": 0,
+          "reason": "Matched your request for Website + Domain Starter to boost business operations",
+          "assumption": "1 primary organizational subscription account"
+        },
+        {
+          "product_id": "P22",
+          "product_name": "Secure Wi-Fi with Guest Network",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 399,
+          "monthly_amount": 399,
+          "setup_fee": 1000,
+          "reason": "Matched your request for Secure Wi-Fi with Guest Network to boost business operations",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P23",
+          "product_name": "Cloud CCTV",
+          "quantity": 2,
+          "unit": "per camera",
+          "price_min": 199,
+          "monthly_amount": 398,
+          "setup_fee": 3600,
+          "reason": "Matched your request for Cloud CCTV to boost business operations",
+          "assumption": "Standard coverage: 2 cloud CCTV cameras per site (2 cameras total)"
+        }
+      ],
+      "pricing": {
+        "monthly_subtotal": 13993,
+        "one_time_subtotal": 14600,
+        "first_month_payable": 28593,
+        "contract_months": 12,
+        "total_contract_value": 182516,
+        "max_install_days": 21,
+        "price_match_with_oracle": true
+      },
+      "budget_result": null,
+      "status": "PASS",
+      "observations": []
+    },
+    {
+      "scenario_id": "TC09",
+      "name": "Multi-Branch Pharmacy",
+      "profile": {
+        "business_name": "MedPlus Care Pharmacy",
+        "business_type": "Pharmacy Chain",
+        "segment": "multi",
+        "employee_count": 30,
+        "num_sites": 5,
+        "city": "Chennai",
+        "city_tier": 1,
+        "is_known_city": true,
+        "has_gstin": true,
+        "gstin": "33MFTXS9954Q1Z9",
+        "stated_needs": [
+          "broadband",
+          "sd-wan",
+          "firewall",
+          "pos",
+          "cctv",
+          "email"
+        ]
+      },
+      "recommended_pids": [
+        "P01",
+        "P02",
+        "P03",
+        "P04",
+        "P05",
+        "P06",
+        "P10",
+        "P16",
+        "P19",
+        "P21",
+        "P23"
+      ],
+      "recommended_items": [
+        {
+          "product_id": "P01",
+          "product_name": "Biz Fibre 100",
+          "quantity": 5,
+          "unit": "per site",
+          "price_min": 999,
+          "monthly_amount": 4995,
+          "setup_fee": 0,
+          "reason": "Matched your request for Biz Fibre 100 to boost business operations",
+          "assumption": "1 deployment per site across 5 site(s)"
+        },
+        {
+          "product_id": "P02",
+          "product_name": "Biz Fibre 300",
+          "quantity": 5,
+          "unit": "per site",
+          "price_min": 1499,
+          "monthly_amount": 7495,
+          "setup_fee": 0,
+          "reason": "Biz Fibre 300 Mbps across 5 branch locations",
+          "assumption": "1 deployment per site across 5 site(s)"
+        },
+        {
+          "product_id": "P03",
+          "product_name": "Biz Fibre 1G",
+          "quantity": 5,
+          "unit": "per site",
+          "price_min": 3999,
+          "monthly_amount": 19995,
+          "setup_fee": 0,
+          "reason": "Matched your request for Biz Fibre 1G to boost business operations",
+          "assumption": "1 deployment per site across 5 site(s)"
+        },
+        {
+          "product_id": "P04",
+          "product_name": "Biz 5G AirFiber 100",
+          "quantity": 5,
+          "unit": "per site",
+          "price_min": 899,
+          "monthly_amount": 4495,
+          "setup_fee": 0,
+          "reason": "Matched your request for Biz 5G AirFiber 100 to boost business operations",
+          "assumption": "1 deployment per site across 5 site(s)"
+        },
+        {
+          "product_id": "P05",
+          "product_name": "Internet Leased Line 20",
+          "quantity": 5,
+          "unit": "per site",
+          "price_min": 8000,
+          "monthly_amount": 40000,
+          "setup_fee": 50000,
+          "reason": "Matched your request for Internet Leased Line 20 to boost business operations",
+          "assumption": "1 deployment per site across 5 site(s)"
+        },
+        {
+          "product_id": "P06",
+          "product_name": "Internet Leased Line 100",
+          "quantity": 5,
+          "unit": "per site",
+          "price_min": 25000,
+          "monthly_amount": 125000,
+          "setup_fee": 75000,
+          "reason": "Matched your request for Internet Leased Line 100 to boost business operations",
+          "assumption": "1 deployment per site across 5 site(s)"
+        },
+        {
+          "product_id": "P10",
+          "product_name": "Managed SD-WAN",
+          "quantity": 5,
+          "unit": "per site",
+          "price_min": 2500,
+          "monthly_amount": 12500,
+          "setup_fee": 25000,
+          "reason": "Matched your request for Managed SD-WAN to boost business operations",
+          "assumption": "1 deployment per site across 5 site(s)"
+        },
+        {
+          "product_id": "P16",
+          "product_name": "Cloud Email & Office Suite",
+          "quantity": 30,
+          "unit": "per user",
+          "price_min": 125,
+          "monthly_amount": 3750,
+          "setup_fee": 0,
+          "reason": "Matched your request for Cloud Email & Office Suite to boost business operations",
+          "assumption": "1 user seat per employee (30 employees)"
+        },
+        {
+          "product_id": "P19",
+          "product_name": "Cloud POS & Billing",
+          "quantity": 5,
+          "unit": "per counter",
+          "price_min": 599,
+          "monthly_amount": 2995,
+          "setup_fee": 12500,
+          "reason": "Matched your request for Cloud POS & Billing to boost business operations",
+          "assumption": "1 POS billing counter per site (5 counter(s))"
+        },
+        {
+          "product_id": "P21",
+          "product_name": "Managed Firewall",
+          "quantity": 5,
+          "unit": "per site",
+          "price_min": 1999,
+          "monthly_amount": 9995,
+          "setup_fee": 20000,
+          "reason": "Matched your request for Managed Firewall to boost business operations",
+          "assumption": "1 deployment per site across 5 site(s)"
+        },
+        {
+          "product_id": "P23",
+          "product_name": "Cloud CCTV",
+          "quantity": 10,
+          "unit": "per camera",
+          "price_min": 199,
+          "monthly_amount": 1990,
+          "setup_fee": 18000,
+          "reason": "Matched your request for Cloud CCTV to boost business operations",
+          "assumption": "Standard coverage: 2 cloud CCTV cameras per site (10 cameras total)"
+        }
+      ],
+      "pricing": {
+        "monthly_subtotal": 233210,
+        "one_time_subtotal": 200500,
+        "first_month_payable": 433710,
+        "contract_months": 24,
+        "total_contract_value": 5797540,
+        "max_install_days": 30,
+        "price_match_with_oracle": true
+      },
+      "budget_result": null,
+      "status": "PASS",
+      "observations": []
+    },
+    {
+      "scenario_id": "TC10",
+      "name": "Rural Manufacturing Unit",
+      "profile": {
+        "business_name": "GreenTerra Agro Processing",
+        "business_type": "Manufacturing / Agro",
+        "segment": "mfg",
+        "employee_count": 8,
+        "num_sites": 1,
+        "city": "Dindigul",
+        "city_tier": 2,
+        "is_known_city": false,
+        "has_gstin": true,
+        "gstin": "33MFTXS9954Q1Z9",
+        "stated_needs": [
+          "broadband",
+          "mobile",
+          "cctv",
+          "backup"
+        ]
+      },
+      "recommended_pids": [
+        "P01",
+        "P02",
+        "P04",
+        "P07",
+        "P08",
+        "P09",
+        "P17",
+        "P23"
+      ],
+      "recommended_items": [
+        {
+          "product_id": "P01",
+          "product_name": "Biz Fibre 100",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 999,
+          "monthly_amount": 999,
+          "setup_fee": 0,
+          "reason": "Matched your request for Biz Fibre 100 to boost business operations",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P02",
+          "product_name": "Biz Fibre 300",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 1499,
+          "monthly_amount": 1499,
+          "setup_fee": 0,
+          "reason": "Biz Fibre 300 Mbps unlimited connectivity for multi-workstation reliability",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P04",
+          "product_name": "Biz 5G AirFiber 100",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 899,
+          "monthly_amount": 899,
+          "setup_fee": 0,
+          "reason": "Matched your request for Biz 5G AirFiber 100 to boost business operations",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P07",
+          "product_name": "Business Postpaid 299",
+          "quantity": 8,
+          "unit": "per line",
+          "price_min": 299,
+          "monthly_amount": 2392,
+          "setup_fee": 0,
+          "reason": "Matched your request for Business Postpaid 299 to boost business operations",
+          "assumption": "1 business mobile connection per employee (8 lines)"
+        },
+        {
+          "product_id": "P08",
+          "product_name": "Business Postpaid 599",
+          "quantity": 8,
+          "unit": "per line",
+          "price_min": 599,
+          "monthly_amount": 4792,
+          "setup_fee": 0,
+          "reason": "Matched your request for Business Postpaid 599 to boost business operations",
+          "assumption": "1 business mobile connection per employee (8 lines)"
+        },
+        {
+          "product_id": "P09",
+          "product_name": "Backup 4G/5G Failover",
+          "quantity": 1,
+          "unit": "per site",
+          "price_min": 499,
+          "monthly_amount": 499,
+          "setup_fee": 1500,
+          "reason": "Matched your request for Backup 4G/5G Failover to boost business operations",
+          "assumption": "1 deployment per site across 1 site(s)"
+        },
+        {
+          "product_id": "P17",
+          "product_name": "Cloud Backup 1 TB",
+          "quantity": 1,
+          "unit": "per account",
+          "price_min": 499,
+          "monthly_amount": 499,
+          "setup_fee": 0,
+          "reason": "Matched your request for Cloud Backup 1 TB to boost business operations",
+          "assumption": "1 primary organizational subscription account"
+        },
+        {
+          "product_id": "P23",
+          "product_name": "Cloud CCTV",
+          "quantity": 2,
+          "unit": "per camera",
+          "price_min": 199,
+          "monthly_amount": 398,
+          "setup_fee": 3600,
+          "reason": "Matched your request for Cloud CCTV to boost business operations",
+          "assumption": "Standard coverage: 2 cloud CCTV cameras per site (2 cameras total)"
+        }
+      ],
+      "pricing": {
+        "monthly_subtotal": 11977,
+        "one_time_subtotal": 5100,
+        "first_month_payable": 17077,
+        "contract_months": 12,
+        "total_contract_value": 148824,
+        "max_install_days": 5,
+        "price_match_with_oracle": true
+      },
+      "budget_result": null,
+      "status": "PASS",
+      "observations": [
+        "City 'Dindigul' not in smb_leads.csv; silently defaulted to Tier 2"
+      ]
+    }
+  ],
+  "phase3_edge_cases": [
+    {
+      "edge_case_id": "E01",
+      "name": "Missing GSTIN & 3 GSTIN States",
+      "status": "PASS",
+      "details": {
+        "state_a_no_gstin_blocked_count": 10,
+        "state_b_declared_no_num_blocked_count": 10,
+        "state_c_active_gstin_unblocked_pids": [
+          "P03",
+          "P12",
+          "P13",
+          "P14",
+          "P15"
+        ],
+        "note": "Engine strictly treats declared GST without valid number as ineligible for GST-required products."
+      }
+    },
+    {
+      "edge_case_id": "E02",
+      "name": "Insufficient Employees Thresholds",
+      "status": "PASS",
+      "details": {
+        "P12_ineligible_at_2_emp": true,
+        "P03_ineligible_at_2_emp": true,
+        "P05_ineligible_at_2_emp": true,
+        "P21_ineligible_at_2_emp": true,
+        "P06_ineligible_at_2_emp": true
+      }
+    },
+    {
+      "edge_case_id": "E03",
+      "name": "Insufficient Sites (SD-WAN P10 requires 3 sites)",
+      "status": "PASS",
+      "details": {
+        "P10_eligible_at_2_sites": false,
+        "P10_eligible_at_3_sites": true,
+        "unlock_suggestion_2_sites": "Expand operations to at least 3 operating sites (currently 2)"
+      }
+    },
+    {
+      "edge_case_id": "E04",
+      "name": "No Fibre Availability (FWA P04 Alternative)",
+      "status": "PASS",
+      "details": {
+        "dependents_allowing_P04": [
+          "P12",
+          "P22",
+          "P23"
+        ],
+        "dependents_excluding_P04": [
+          "P09",
+          "P10",
+          "P11",
+          "P21"
+        ],
+        "note": "P04 Biz 5G AirFiber satisfies SIP (P12), Wi-Fi (P22), and CCTV (P23), but cannot support Failover (P09), SD-WAN (P10), Static IP (P11), or Firewall (P21)."
+      }
+    },
+    {
+      "edge_case_id": "E05",
+      "name": "Low Budget Ceiling (\u20b92,000 monthly)",
+      "status": "PASS",
+      "details": {
+        "monthly_budget": 2000,
+        "total_monthly_cost": 1995,
+        "selected_pids": [
+          "P01",
+          "P07",
+          "P23"
+        ],
+        "dropped_count": 4,
+        "dropped_explanations": [
+          "P02 (Biz Fibre 300): Exceeded remaining budget of \u20b95/mo (product requires \u20b91,499/mo)",
+          "P04 (Biz 5G AirFiber 100): Exceeded remaining budget of \u20b95/mo (product requires \u20b9899/mo)",
+          "P08 (Business Postpaid 599): Exceeded remaining budget of \u20b95/mo (product requires \u20b91,198/mo)",
+          "P19 (Cloud POS & Billing): Exceeded remaining budget of \u20b95/mo (product requires \u20b9599/mo)"
+        ]
+      }
+    },
+    {
+      "edge_case_id": "E06",
+      "name": "Unreasonable Requirements (1-person office requesting enterprise ILL/1G)",
+      "status": "PASS",
+      "details": {
+        "P06_blocked_reason": "Requires an active GSTIN registration; Requires at least 25 employee(s) (current: 1)",
+        "P03_blocked_reason": "Requires an active GSTIN registration; Requires at least 5 employee(s) (current: 1)",
+        "fallback_recommended": [
+          "P01",
+          "P02",
+          "P04"
+        ]
+      }
+    },
+    {
+      "edge_case_id": "E07",
+      "name": "Missing Product Dependency Handling",
+      "status": "PASS",
+      "details": {
+        "recommendation_auto_added_parent": [
+          "P01"
+        ],
+        "validation_detected_missing_parent": true,
+        "pruning_on_parent_removal": true,
+        "pruning_warnings": [
+          "Removed Biz Fibre 100 (P01) from quote.",
+          "Also removed Managed Firewall (P21) because it requires a broadband link (P01 / P02 / P03 / P05 / P06)"
+        ]
+      }
+    },
+    {
+      "edge_case_id": "E08",
+      "name": "Conflicting Requirements (Micro business demanding enterprise SD-WAN & Firewall)",
+      "status": "PASS",
+      "details": {
+        "recommended_pids": [
+          "P01",
+          "P02",
+          "P04"
+        ],
+        "budget_fitted_pids": [
+          "P01"
+        ],
+        "note": "Engine safely drops conflicting ineligible requests and serves valid micro baseline."
+      }
+    }
+  ],
+  "phase4_rules_validation": {
+    "deterministic_3x_runs": true,
+    "criteria_eval": {
+      "1_employee_limits": "PASS - Strictly enforced via min_employees field in evaluate_product_eligibility",
+      "2_site_limits": "PASS - Strictly enforced via min_sites field in evaluate_product_eligibility (e.g. SD-WAN P10 requires 3 sites)",
+      "3_gstin_requirements": "PASS - Strictly enforced via requires_gstin; requires format and active registry check",
+      "4_city_tier_restrictions": "PASS - Available_city_tiers enforced (e.g. P03 Biz Fibre 1G blocked in Tier 2)",
+      "5_dependency_requirements": "PASS - requires_one_of validated and automatically resolved with cheapest parent",
+      "6_product_availability": "PASS - Products filtered against available_city_tiers and network compatibility",
+      "7_correct_quantities": "PASS - Unit-based quantities (per site, user, line, counter, camera, device, etc.) computed with stated assumptions",
+      "8_recurring_monthly_price": "PASS - Quoted starting price exactly equals catalogue price_min_inr_per_month",
+      "9_one_time_setup_fee": "PASS - Setup fees strictly matched to one_time_setup_inr multiplied by quantity",
+      "10_total_monthly_cost": "PASS - Monthly subtotal matches sum(unit_price * quantity)",
+      "11_budget_constraints": "PASS - fit_bundle_to_budget strictly respects monthly ceiling and explains dropped items",
+      "12_duplicate_prevention": "PASS - Products stored in sets/dicts, no duplicate product_id allowed in quote",
+      "13_alternative_suggestions": "PASS - compute_unlock_suggestion provides exact unlock requirements for ineligible products",
+      "14_missing_info_handling": "PASS - evaluate_slot_filling asks 1 question at a time and confirms ambiguous inputs"
+    },
+    "advisor_text_extraction": {
+      "input_text": "I run a dental clinic in Bengaluru with 5 employees. I have a GSTIN. Need broadband, email and cloud backup.",
+      "extracted_profile": {
+        "business_name": "",
+        "business_type": "Healthcare/Clinic",
+        "segment": "prof",
+        "employees": 5,
+        "employees_missing": false,
+        "sites": 1,
+        "sites_missing": false,
+        "city": "Bengaluru",
+        "has_gstin": true,
+        "gstin_missing": false,
+        "gstin": null,
+        "current_broadband": "None",
+        "digital_needs": [
+          "broadband",
+          "cloud_storage"
+        ],
+        "explanation": "Optimized enterprise bundle for your Healthcare/Clinic operations in Bengaluru with 5 team members. Delivers SLA-backed high-speed business connectivity and integrated digital operations tools.",
+        "is_ambiguous_employees": false,
+        "ambiguous_val": null,
+        "is_llm": false,
+        "mode_note": "Running in rules mode"
+      },
+      "slot_filling_status": {
+        "is_complete": true,
+        "missing_slots": [],
+        "next_missing_slot": null,
+        "next_question": null,
+        "ambiguous_slot": null,
+        "confirmation_prompt": null
+      },
+      "recommended_pids": [
+        "P01",
+        "P02",
+        "P04",
+        "P16",
+        "P17"
+      ]
+    }
+  }
+}

@@ -1,0 +1,47 @@
+# Environments and Virtualenvs
+.venv/
+venv/
+ENV/
+env/
+
+# Python cache and testing artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Environment files with secrets
+.env
+.env.*
+!.env.example
+
+# KYC documents, specimen images and uploaded business files
+kyc_documents/
+data/kyc_documents/
+crop_*.png
+k02_*.png
+K02_*.png
+k10_*.png
+K10_*.png
+uploads/
+temp/
+tmp/
+
+# Customer datasets, leads, and private registries
+smb_leads.csv
+data/smb_leads.csv
+mock_gstin_registry.csv
+data/mock_gstin_registry.csv
+mock_udyam_registry.csv
+data/mock_udyam_registry.csv
+orders.json
+data/orders.json
+
+# Temporary, OS, and Editor files
+*.log
+.DS_Store
+Thumbs.db
+__MACOSX/
+.vscode/
+.idea/
