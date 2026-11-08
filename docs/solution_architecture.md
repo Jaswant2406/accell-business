@@ -378,25 +378,7 @@ The architecture has been verified against the project's comprehensive automated
 - **Pytest Test Suite (`pytest -v`)**: **89/89 tests passing (100%)** covering multilingual intent extraction, boundary fuzzing ($10,000$ employees, $500$ sites), catalogue dependency validation, setup fee scaling across 248 leads, and WCAG AAA/AA visual contrast ratios ($\ge 4.5:1$).
 - **Playwright Layout & Overlap Suite (`scripts/verify_layout_overlap.py`)**: Clean exit code 0 across Desktop (1440px), Landscape Tablet (1024px), Portrait Tablet (768px), and Mobile (390px) viewports with **zero bounding box overlaps, zero clipped text, and zero horizontal page overflow**.
 
-##7. Screenshots
 
-<img width="1917" height="1035" alt="Screenshot 2026-11-08 202539" src="https://github.com/user-attachments/assets/96eee5e9-749e-4b59-bc62-6ec8fefb4044" />
-
-<img width="1917" height="1078" alt="Screenshot 2026-11-08 202548" src="https://github.com/user-attachments/assets/1615fb70-30ad-4a42-9fbd-4338cbe31f54" />
-
-<img width="1917" height="1077" alt="Screenshot 2026-11-08 202606" src="https://github.com/user-attachments/assets/9a274bb5-09c6-4021-af28-2d5ce956f1e0" />
-
-<img width="1917" height="1078" alt="Screenshot 2026-11-08 202626" src="https://github.com/user-attachments/assets/c1894dca-bad7-4a76-942f-b2009a4e3aa9" />
-
-<img width="1917" height="1078" alt="Screenshot 2026-11-08 202633" src="https://github.com/user-attachments/assets/c60e2793-2d70-451c-9996-948e5e0ab1e6" />
-
-<img width="1917" height="985" alt="Screenshot 2026-11-08 202640" src="https://github.com/user-attachments/assets/17fabedc-b5db-4cb8-9a6f-1e2199e66337" />
-
-<img width="1917" height="911" alt="Screenshot 2026-11-08 202700" src="https://github.com/user-attachments/assets/08f30c62-258b-4888-be5d-f42d5ccc5fc9" />
-
-<img width="1917" height="1078" alt="Screenshot 2026-11-08 202705" src="https://github.com/user-attachments/assets/d49e7c2e-4c88-4e41-b3f9-ceb375232c41" />
-
-<img width="1917" height="1078" alt="Screenshot 2026-11-08 202711" src="https://github.com/user-attachments/assets/24f50845-15ab-4071-a348-0d571638c758" />
 
 
 
