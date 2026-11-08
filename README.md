@@ -58,6 +58,27 @@ Activated customers took 17.6 days on average from lead to activation and made 3
 - `requires_one_of`: product needs at least one of these products in the same bundle (`|`-separated)
 - `typical_install_days`: use for the order tracker and for expected activation dates
 
+
+ Screenshots
+
+<img width="1917" height="1035" alt="Screenshot 2026-11-08 202539" src="https://github.com/user-attachments/assets/96eee5e9-749e-4b59-bc62-6ec8fefb4044" />
+
+<img width="1917" height="1078" alt="Screenshot 2026-11-08 202548" src="https://github.com/user-attachments/assets/1615fb70-30ad-4a42-9fbd-4338cbe31f54" />
+
+<img width="1917" height="1077" alt="Screenshot 2026-11-08 202606" src="https://github.com/user-attachments/assets/9a274bb5-09c6-4021-af28-2d5ce956f1e0" />
+
+<img width="1917" height="1078" alt="Screenshot 2026-11-08 202626" src="https://github.com/user-attachments/assets/c1894dca-bad7-4a76-942f-b2009a4e3aa9" />
+
+<img width="1917" height="1078" alt="Screenshot 2026-11-08 202633" src="https://github.com/user-attachments/assets/c60e2793-2d70-451c-9996-948e5e0ab1e6" />
+
+<img width="1917" height="985" alt="Screenshot 2026-11-08 202640" src="https://github.com/user-attachments/assets/17fabedc-b5db-4cb8-9a6f-1e2199e66337" />
+
+<img width="1917" height="911" alt="Screenshot 2026-11-08 202700" src="https://github.com/user-attachments/assets/08f30c62-258b-4888-be5d-f42d5ccc5fc9" />
+
+<img width="1917" height="1078" alt="Screenshot 2026-11-08 202705" src="https://github.com/user-attachments/assets/d49e7c2e-4c88-4e41-b3f9-ceb375232c41" />
+
+<img width="1917" height="1078" alt="Screenshot 2026-11-08 202711" src="https://github.com/user-attachments/assets/24f50845-15ab-4071-a348-0d571638c758" />
+
 ## Notes on identifiers
 
 - GSTINs follow the real 15-character structure with a valid checksum, so you can build a real format check. The 4th character of the embedded PAN is always `X`, which is not a valid entity type, so none of them can match a real taxpayer. Accept `X` in your validator.
