@@ -39,6 +39,7 @@ orders.json
 data/orders.json
 
 # Temporary, OS, and Editor files
+screenshot/
 *.log
 .DS_Store
 Thumbs.db
